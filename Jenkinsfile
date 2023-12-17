@@ -27,7 +27,6 @@ pipeline {
                  sh "mvn test"
            }
        }
-      stages {
           stage("SonarQube analysis") {
             steps {
             script {
